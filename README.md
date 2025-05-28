@@ -113,7 +113,6 @@ As `./threshold.png` show:
 ├── baselines/                 # Baseline experiments (e.g., view2/view3 standard cases)
 ├── extends/                   # Extended multi-view experiments (view4, view5, view6)
 ├── outputs/                   # All generated outputs (images, animations, logs)
-├── colab_demo_free_tier.ipynb # Minimal runnable demo notebook
 ├── evaluation.ipynb           # Evaluation notebook (CLIP-A/C metrics, N×M matrix)
 ├── exp2view.ipynb             # 2-view task experiment
 ├── exp3view.ipynb             # 3-view task experiment
