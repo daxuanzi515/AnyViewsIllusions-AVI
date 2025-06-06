@@ -90,23 +90,6 @@ Our findings show **individual improvements**, but **combined strategies do not 
 
 ---
 
-## 📊 Sample Results
-
-Example A & C scores from different view setups (N×M CLIP evaluation):
-
-| View Count | Avg. A Score | Avg. C Score |
-|------------|--------------|--------------|
-| View 2     | 0.2383       | 0.4917       |
-| View 3     | 0.2376       | 0.2303       |
-| View 4     | 0.2465       | 0.3143       |
-| View 5     | 0.2308       | 0.2979       |
-| View 6     | 0.2466       | 0.2251       |
-
-As `./threshold.png` show:
-![](./threshold.png)
-
----
-
 ## 📁 Directory Overview
 
 ```bash
@@ -118,9 +101,14 @@ As `./threshold.png` show:
 ├── exp3view.ipynb             # 3-view task experiment
 ├── extendNview.ipynb          # View 4–6 experiments and RQ validation
 ├── README.md                  # Project documentation
+├── ExpResults.md              # Experiment results documentation
 ```
 
----
+
+## Experiment Results
+Please check [Experiment Results](ExpResults.md).
+
+
 
 ## 💬 Acknowledgement
 
