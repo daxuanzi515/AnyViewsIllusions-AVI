@@ -112,11 +112,11 @@ Then we calculate the average A and C scores for each view count to see the thre
 
 ### Discussion
 #### NxN Matrix CLIP Scores for View 2 - 6
-![](./threshold.png)
+![](imgs/threshold.png)
 
 From the plot, we can observe that a view count of 4 serves as a critical threshold. At this point, both the Alignment (A) and Concealment (C) scores reach a relatively balanced level. Beyond 4 views, both scores exhibit a consistent decline — in some cases, approaching zero — indicating that adding more views may degrade both alignment and concealment performance. This trend suggests that using 4 views achieves an optimal trade-off between preserving alignment with the prompt and maintaining perceptual concealment across views.
 #### Single-View CLIP Scores for View 4 - 6
-![](./threshold_com.png)
+![](imgs/threshold_com.png)
 
 Additionally, in this plot, we discuss the single-image CLIP scores from 4 to 6 views. The CLIP-A (alignment) scores remain relatively stable across these three view counts, with only a slight decrease from 0.2724 (4 views) to 0.2612 (6 views). This indicates that the semantic alignment between the prompt and image content is largely preserved even as the number of views increases.
 
