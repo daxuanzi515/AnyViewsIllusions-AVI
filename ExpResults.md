@@ -75,7 +75,7 @@ Therefore, we decide to use the stable implementation of testing methods to gene
 </table>
 
 **Bar Plot:**
-![AC_scores_coms.png](AC_scores_coms.png)
+![AC_scores_coms.png](imgs/AC_scores_coms.png)
 
 From this plot, we can know that the performance of the three methods—Tancik, VA Original, and Burgert—varies significantly across the two evaluation dimensions: A Score (Alignment) and C Score (Concealment).
 
