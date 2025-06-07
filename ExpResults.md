@@ -220,8 +220,8 @@ We totally test nine testcases in our illusion configuration list, and collect t
   </tr>
 </table>
 
-#### Discussion and Conclusion
-##### 🤔 Why *Adaptive Soft* Achieves the Best Overall Performance?
+### Discussion
+#### 🤔 Why *Adaptive Soft* Achieves the Best Overall Performance?
 
 We evaluate the performance of all methods using two key metrics:
 
@@ -233,7 +233,7 @@ We evaluate the performance of all methods using two key metrics:
 
 ---
 
-##### 🔍 Highlighted Examples
+#### 🔍 Highlighted Examples
 
 1. `rotation_objects_duck.guitar.tower.sunflower`
 
@@ -255,7 +255,7 @@ We evaluate the performance of all methods using two key metrics:
 
 ---
 
-##### 🔄 Comparison with *VA Original*
+#### 🔄 Comparison with *VA Original*
 
 | Method            | CLIP-A Highlights                        | CLIP-C Highlights                         | Weaknesses                                                                     |
 | ----------------- | ---------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------ |
@@ -264,7 +264,7 @@ We evaluate the performance of all methods using two key metrics:
 
 ---
 
-##### 🧾 Conclusion
+#### 🧾 Conclusion
 
 **Adaptive Soft** demonstrates the best overall performance in multi-view visual illusion generation when evaluated by the number of first-place rankings across test cases, rather than relying on mean scores which may be skewed by outliers.
 
