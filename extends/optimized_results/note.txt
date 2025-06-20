@@ -1,0 +1,336 @@
+illusion_configs = [
+    {
+        "name": "four_views_rotation_objects_duck.guitar.tower.sunflower",
+        "prompts": [
+            "an oil painting of a duck",
+            "an oil painting of a guitar",
+            "an oil painting of a tower",
+            "an oil painting of a sunflower"
+        ],
+        "views": ['identity', 'rotate_cw', 'rotate_ccw', 'rotate_180']
+    },
+    {
+        "name": "four_views_rotation_cycle_bird.cup.cat.fox",
+        "prompts": [
+            "a surreal painting of a bird",
+            "a surreal painting of a cup",
+            "a surreal painting of a cat",
+            "a surreal painting of a fox"
+        ],
+        "views": ["identity", "rotate_cw", "rotate_180", "rotate_ccw"]
+    },
+    {
+        "name": "four_views_flip_symmetry_bicycle.castle.mask.sunflower",
+        "prompts": [
+            "a pencil sketch of a bicycle",
+            "a pencil sketch of a castle",
+            "a pencil sketch of a mask",
+            "a pencil sketch of a sunflower"
+        ],
+        "views": ["identity", "flip", "rotate_180", "flip"]
+    },
+    {
+        "name": "four_views_flip_perturbation_mountain.window.balloon.house",
+        "prompts": [
+            "a watercolor of a mountain",
+            "a watercolor of a window",
+            "a watercolor of a balloon",
+            "a watercolor of a house"
+        ],
+        "views": ["identity", "rotate_180", "flip", "rotate_180"]
+    },
+    {
+        "name": "four_views_mixed_flip_rotation_tree.train.lion.bridge",
+        "prompts": [
+            "an oil painting of a tree",
+            "an oil painting of a train",
+            "an oil painting of a lion",
+            "an oil painting of a bridge"
+        ],
+        "views": ["identity", "rotate_cw", "flip", "negate"]
+    },
+    {
+        "name": "four_views_structure_destruction_fish.microwave.pool.trafficlight",
+        "prompts": [
+            "a cartoon painting of a fish",
+            "a cartoon painting of a microwave",
+            "a cartoon painting of a swimming pool",
+            "a cartoon painting of a traffic light"
+        ],
+        "views": ["identity", "patch_permute", "pixel_permute", "jigsaw"]
+    },
+    {
+        "name": "four_views_style_disruptive_tornado.statue.clock.bat",
+        "prompts": [
+            "a digital artwork of a tornado",
+            "a digital artwork of a stone statue",
+            "a digital artwork of a sand clock",
+            "a digital artwork of a bat"
+        ],
+        "views": ["identity", "negate", "square_hinge", "inner_circle"]
+    },
+    {
+        "name": "four_views_low_high_freq_mix_robotdog.drone.rover.cannon",
+        "prompts": [
+            "a sci-fi painting of a robot dog",
+            "a sci-fi painting of a drone",
+            "a sci-fi painting of a moon rover",
+            "a sci-fi painting of a laser cannon"
+        ],
+        "views": ["identity", "pixel_permute", "rotate_180", "patch_permute"]
+    },
+    {
+        "name": "four_views_random_disruption_penguin.mirror.vacuum.speaker",
+        "prompts": [
+            "a comic-style drawing of a penguin",
+            "a comic-style drawing of a mirror",
+            "a comic-style drawing of a vacuum cleaner",
+            "a comic-style drawing of a speaker"
+        ],
+        "views": ["identity", "flip", "negate", "skew"]
+    },
+  ]
+
+  without animations
+  item = 0-8
+  four_views = 4
+  already done: 8
+  results: 
+Single CLIP-A/C：
+TestCase Solution For Single Image：
+Index: 0
+
+✅ solution1_shared_seed:
+  📸 Image 1: A = 0.2337, C = 0.2500
+✅ solution2_prompt_embedding:
+  📸 Image 1: A = 0.1693, C = 0.2500
+✅ solution3_others:
+  📸 Image 1: A = 0.2019, C = 0.2500
+✅ baseline:
+  📸 Image 1: A = 0.1878, C = 0.2500
+✅ adaptive_soft:
+  📸 Image 1: A = 0.1564, C = 0.2500
+✅ adaptive_strong:
+  📸 Image 1: A = 0.1538, C = 0.2500
+
+
+Index: 1
+
+✅ solution1_shared_seed:
+  📸 Image 1: A = 0.1555, C = 0.2500
+✅ solution2_prompt_embedding:
+  📸 Image 1: A = 0.1731, C = 0.2500
+✅ solution3_others:
+  📸 Image 1: A = 0.2337, C = 0.2500
+✅ baseline:
+  📸 Image 1: A = 0.1906, C = 0.2500
+✅ adaptive_soft:
+  📸 Image 1: A = 0.2011, C = 0.2500
+✅ adaptive_strong:
+  📸 Image 1: A = 0.1825, C = 0.2500
+
+
+Index: 2
+
+✅ solution1_shared_seed:
+  📸 Image 1: A = 0.2225, C = 0.2500
+✅ solution2_prompt_embedding:
+  📸 Image 1: A = 0.1939, C = 0.2500
+✅ solution3_others:
+  📸 Image 1: A = 0.2529, C = 0.2500
+✅ baseline:
+  📸 Image 1: A = 0.2155, C = 0.2500
+✅ adaptive_soft:
+  📸 Image 1: A = 0.1598, C = 0.2500
+✅ adaptive_strong:
+  📸 Image 1: A = 0.1516, C = 0.2500
+
+
+Index: 3
+
+✅ solution1_shared_seed:
+  📸 Image 1: A = 0.2123, C = 0.2500
+✅ solution2_prompt_embedding:
+  📸 Image 1: A = 0.2509, C = 0.2500
+✅ solution3_others:
+  📸 Image 1: A = 0.2575, C = 0.2500
+✅ baseline:
+  📸 Image 1: A = 0.2621, C = 0.2500
+✅ adaptive_soft:
+  📸 Image 1: A = 0.2571, C = 0.2500
+✅ adaptive_strong:
+  📸 Image 1: A = 0.2450, C = 0.2500
+
+
+Index: 4
+
+✅ solution1_shared_seed:
+  📸 Image 1: A = 0.2025, C = 0.2500
+✅ solution2_prompt_embedding:
+  📸 Image 1: A = 0.1528, C = 0.2500
+✅ solution3_others:
+  📸 Image 1: A = 0.2283, C = 0.2500
+✅ baseline:
+  📸 Image 1: A = 0.1760, C = 0.2500
+✅ adaptive_soft:
+  📸 Image 1: A = 0.1653, C = 0.2500
+✅ adaptive_strong:
+  📸 Image 1: A = 0.1961, C = 0.2500
+
+
+Index: 5
+
+✅ solution1_shared_seed:
+  📸 Image 1: A = 0.1460, C = 0.2500
+✅ solution2_prompt_embedding:
+  📸 Image 1: A = 0.1881, C = 0.2500
+✅ solution3_others:
+  📸 Image 1: A = 0.1907, C = 0.2500
+✅ baseline:
+  📸 Image 1: A = 0.2080, C = 0.2500
+✅ adaptive_soft:
+  📸 Image 1: A = 0.2297, C = 0.2500
+✅ adaptive_strong:
+  📸 Image 1: A = 0.1822, C = 0.2500
+
+
+Index: 6
+
+✅ solution1_shared_seed:
+  📸 Image 1: A = 0.1826, C = 0.2500
+✅ solution2_prompt_embedding:
+  📸 Image 1: A = 0.1846, C = 0.2500
+✅ solution3_others:
+  📸 Image 1: A = 0.2171, C = 0.2500
+✅ baseline:
+  📸 Image 1: A = 0.1641, C = 0.2500
+✅ adaptive_soft:
+  📸 Image 1: A = 0.1454, C = 0.2500
+✅ adaptive_strong:
+  📸 Image 1: A = 0.1468, C = 0.2500
+
+
+Index: 7
+
+✅ solution1_shared_seed:
+  📸 Image 1: A = 0.1603, C = 0.2500
+✅ solution2_prompt_embedding:
+  📸 Image 1: A = 0.1219, C = 0.2500
+✅ solution3_others:
+  📸 Image 1: A = 0.2380, C = 0.2500
+✅ baseline:
+  📸 Image 1: A = 0.1973, C = 0.2500
+✅ adaptive_soft:
+  📸 Image 1: A = 0.1437, C = 0.2500
+✅ adaptive_strong:
+  📸 Image 1: A = 0.1734, C = 0.2500
+
+# 8
+# Solution For Single Image：
+# ✅ baseline:
+#   📸 Image 1: A = 0.2393, C = 0.2500
+# ✅ solution1_shared_seed:
+#   📸 Image 1: A = 0.2223, C = 0.2500
+# ✅ solution2_prompt_embedding:
+#   📸 Image 1: A = 0.1322, C = 0.2500
+# ✅ solution3_others:
+#   📸 Image 1: A = 0.2353, C = 0.2500
+# ✅ adaptive_soft:
+#   📸 Image 1: A = 0.1719, C = 0.2500
+# ✅ adaptive_strong:
+#   📸 Image 1: A = 0.1839, C = 0.2500
+# ✅ shared_seed AND adaptive_soft:
+#   📸 Image 1: A = 0.1391, C = 0.2500
+
+N * M Matrix CLIP-A/C:
+TestCase Solution N*M Matrix CLIP For Multiple Images-Prompts：
+Index: 0
+
+📊 solution1_shared_seed: A = 0.2859, C = 0.1391
+📊 solution2_prompt_embedding: A = 0.2742, C = 0.5719
+📊 solution3_others: A = 0.3105, C = 0.5930
+📊 baseline: A = 0.2721, C = 0.1355
+📊 adaptive_soft: A = 0.3143, C = 0.6250
+📊 adaptive_strong: A = 0.2228, C = 0.4698
+
+
+Index: 1
+
+📊 solution1_shared_seed: A = 0.1860, C = 0.1344
+📊 solution2_prompt_embedding: A = 0.1863, C = 0.1392
+📊 solution3_others: A = 0.2697, C = 0.2666
+📊 baseline: A = 0.2653, C = 0.6235
+📊 adaptive_soft: A = 0.2351, C = 0.1396
+📊 adaptive_strong: A = 0.2149, C = 0.5329
+
+
+Index: 2
+
+📊 solution1_shared_seed: A = 0.2598, C = 0.1285
+📊 solution2_prompt_embedding: A = 0.2030, C = 0.1250
+📊 solution3_others: A = 0.2720, C = 0.1693
+📊 baseline: A = 0.2502, C = 0.1257
+📊 adaptive_soft: A = 0.2384, C = 0.2203
+📊 adaptive_strong: A = 0.2228, C = 0.1368
+
+
+Index: 3
+
+📊 solution1_shared_seed: A = 0.2639, C = 0.2934
+📊 solution2_prompt_embedding: A = 0.2509, C = 0.1252
+📊 solution3_others: A = 0.2601, C = 0.1254
+📊 baseline: A = 0.3214, C = 0.6070
+📊 adaptive_soft: A = 0.2813, C = 0.1328
+📊 adaptive_strong: A = 0.2477, C = 0.1545
+
+
+Index: 4
+
+📊 solution1_shared_seed: A = 0.2268, C = 0.3986
+📊 solution2_prompt_embedding: A = 0.1528, C = 0.1547
+📊 solution3_others: A = 0.2546, C = 0.1898
+📊 baseline: A = 0.2425, C = 0.6222
+📊 adaptive_soft: A = 0.1658, C = 0.1648
+📊 adaptive_strong: A = 0.2172, C = 0.1895
+
+
+Index: 5
+
+📊 solution1_shared_seed: A = 0.1460, C = 0.1489
+📊 solution2_prompt_embedding: A = 0.1986, C = 0.3187
+📊 solution3_others: A = 0.2448, C = 0.1741
+📊 baseline: A = 0.2466, C = 0.1699
+📊 adaptive_soft: A = 0.2304, C = 0.1909
+📊 adaptive_strong: A = 0.1822, C = 0.1359
+
+
+Index: 6
+
+📊 solution1_shared_seed: A = 0.2448, C = 0.2575
+📊 solution2_prompt_embedding: A = 0.2183, C = 0.4602
+📊 solution3_others: A = 0.2888, C = 0.4808
+📊 baseline: A = 0.2118, C = 0.2721
+📊 adaptive_soft: A = 0.2182, C = 0.5639
+📊 adaptive_strong: A = 0.2065, C = 0.3497
+
+
+Index: 7
+
+📊 solution1_shared_seed: A = 0.1719, C = 0.1416
+📊 solution2_prompt_embedding: A = 0.1505, C = 0.1360
+📊 solution3_others: A = 0.2448, C = 0.1775
+📊 baseline: A = 0.1973, C = 0.1378
+📊 adaptive_soft: A = 0.1437, C = 0.1275
+📊 adaptive_strong: A = 0.1734, C = 0.1338
+
+# 8
+# 📊 baseline: A = 0.2848, C = 0.5801
+# 📊 solution1_shared_seed: A = 0.3027, C = 0.6210
+# 📊 solution2_prompt_embedding: A = 0.1322, C = 0.1289
+# 📊 solution3_others: A = 0.2353, C = 0.1264
+# 📊 adaptive_soft: A = 0.3377, C = 0.6250
+# 📊 adaptive_strong: A = 0.3124, C = 0.6174
+# 📊 shared_seed AND adaptive_soft: A = 0.1847, C = 0.4450
+
+
+
